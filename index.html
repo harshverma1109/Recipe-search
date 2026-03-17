@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search App</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 Recipe Finder</h1>
+            <p class="subtitle">Discover delicious recipes from around the world</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for recipes... (e.g., pasta, chicken, salad)">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="loading" id="loading">Searching for recipes...</div>
+        <div class="no-results" id="noResults">No recipes found. Try a different search!</div>
+
+        <div class="recipes-grid" id="recipesGrid"></div>
+
+        <div class="note">
+            <div class="note-title">📝 Demo Mode</div>
+            <p class="note-text">
+                This app demonstrates recipe search functionality with sample data. 
+                To use real data, sign up for a free API key at 
+                <a href="https://www.themealdb.com/api.php" target="_blank">TheMealDB</a> or 
+                <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular</a>.
+            </p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
